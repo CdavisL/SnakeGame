@@ -8,8 +8,10 @@ btn.addEventListener("click", function(){ drawModule.init();});
         keyCode = window.event.keyCode; 
         keyCode = event.keyCode;
 
+        //this keeps the snake moving in last direction
         switch(keyCode) {
-        
+          
+        //these case numbers are directly to arrow keys on the laptop/computer
         case 37: 
           if (direction != 'right') {
             direction = 'left';
